@@ -85,7 +85,7 @@ else
   echo "⬇️ Installing the necessary version of Go..."
 
   # Download the Go tarball
-  wget -4 https://go.dev/dl/go1.20.14.linux-amd64.tar.gz || { echo "❌ Failed to download Go! Exiting..."; exit_message; exit 1; }
+  wget -4 https://golang.google.cn/dl/go1.20.14.linux-amd64.tar.gz || { echo "❌ Failed to download Go! Exiting..."; exit_message; exit 1; }
 
   # Remove the existing Go installation if it exists
   if [ -d "/usr/local/go" ]; then
